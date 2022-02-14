@@ -5,17 +5,21 @@ import clientConfig from "../../client-config";
 
 import * as styles from "./figure.module.css";
 
-export function Figure({ node }) {
-  if (!node.asset) {
+export function Figure( node ) {
+
+  if (!node.value.asset) {
     return null;
   }
 
-  const imageData = getGatsbyImageData(node.asset, { maxWidth: 675 }, clientConfig.sanity);
+
+  const imageData = getGatsbyImageData(node.value.asset, { maxWidth: 675 }, clientConfig.sanity);
+
+  console.log(imageData)
 
   return (
     <figure className={styles.root}>
-      <GatsbyImage image={imageData} alt={node.alt} />
-      {node.caption && <figcaption>{node.caption}</figcaption>}
+      <GatsbyImage image={imageData} alt={node.value.alt} />
+      {node.value.caption && <figcaption>{node.value.caption}</figcaption>}
     </figure>
   );
 }

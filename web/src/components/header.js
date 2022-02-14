@@ -19,7 +19,7 @@ const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
       <nav className={cn(styles.nav, showNav && styles.showNav)}>
         <ul>
           <li>
-            <Link to="/archive/">Archive</Link>
+            <Link to="//000679544.codepen.website/resume.pdf" target="_blank">Resumé</Link>
           </li>
         </ul>
       </nav>

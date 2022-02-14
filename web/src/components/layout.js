@@ -11,9 +11,9 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
     <footer className={styles.footer}>
       <div className={styles.footerWrapper}>
         <div className={styles.siteInfo}>
-          © {new Date().getFullYear()}, Built with <a href="https://www.sanity.io">Sanity</a> &amp;
+          Matt Whalley © {new Date().getFullYear()}, Built with Love, <a href="https://www.sanity.io">Sanity</a> &amp;
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://www.gatsbyjs.org">Gatsby on Netlify</a>
         </div>
       </div>
     </footer>

@@ -17,10 +17,14 @@ export default {
       options: {
         layout: 'radio',
         list: [
-          {title: 'Designer', value: 'designer'},
-          {title: 'Developer', value: 'developer'},
-          {title: 'Editor', value: 'editor'},
-          {title: 'Manager', value: 'manager'}
+          {title: 'Senior Digital Designer', value: 'Senior Digital Designer'},
+          {title: 'Front-end Developer', value: 'Front-end Developer'},
+          {title: 'Website Manager', value: 'Website Manager'},
+          {title: 'Communications Manager', value: 'Communications Manager'},
+          {title: 'Client', value: 'client'},
+          {title: 'SharePoint Administrator', value: 'SharePoint Administrator'},
+          {title: 'Server Administrator', value: 'Server Administrator'},
+          {title: 'DevOps Manager', value: 'DevOps Manager'}
         ]
       }
     }

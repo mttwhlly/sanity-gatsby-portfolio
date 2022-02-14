@@ -86,11 +86,11 @@ const IndexPage = props => {
   return (
     <Layout>
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
+      <Container><h1>I design and build digital products that&nbsp;enhance&nbsp;communities.</h1></Container>
       <Container>
-        <h1 hidden>Welcome to {site.title}</h1>
         {projectNodes && (
           <ProjectPreviewGrid
-            title="Latest projects"
+            title="Selected projects"
             nodes={projectNodes}
             browseMoreHref="/archive/"
           />
