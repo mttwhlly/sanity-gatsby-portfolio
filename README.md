@@ -1,4 +1,6 @@
-# sanity-gatsby-portfolio
+# mattwhalley.com
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/25a56d89-482a-4a79-9280-c049dcd30473/deploy-status)](https://app.netlify.com/sites/sanity-gatsby-portfolio-web-t2mxnymd/deploys)
 
 A portfolio using structured content and a static site builder.
 
