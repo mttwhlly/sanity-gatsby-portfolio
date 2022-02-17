@@ -15,5 +15,8 @@
   },
   "devDependencies": {
     "lerna": "^4.0.0"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^4.5.4"
   }
 }
