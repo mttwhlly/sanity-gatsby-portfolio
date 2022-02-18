@@ -6,6 +6,7 @@ import { imageUrlFor } from "../lib/image-url";
 import BlockContent from "./block-content";
 import Container from "./container";
 import RoleList from "./role-list";
+// import { ArrowUpRight } from 'phosphor-react';
 
 import * as styles from "./project.module.css";
 
@@ -39,10 +40,10 @@ function Project(props) {
                   : format(new Date(publishedAt), "MMMM do yyyy")}
               </div>
             )}
-            {members && members.length > 0 && <RoleList items={members} title="People" />}
+            {members && members.length > 0 && <RoleList items={members} title="Team" />}
             {categories && categories.length > 0 && (
               <div className={styles.categories}>
-                <h3 className={styles.categoriesHeadline}>Tasks</h3>
+                <h3 className={styles.categoriesHeadline}>Toolset</h3>
                 <ul>
                   {categories.map(category => (
                     <li key={category._id}>{category.title}</li>
@@ -52,12 +53,12 @@ function Project(props) {
             )}
             {relatedProjects && relatedProjects.length > 0 && (
               <div className={styles.relatedProjects}>
-                <h3 className={styles.relatedProjectsHeadline}>Related</h3>
+                <h3 className={styles.relatedProjectsHeadline}>Related Projects</h3>
                 <ul>
                   {relatedProjects.map(project => (
                     <li key={`related_${project._id}`}>
                       {project.slug ? (
-                        <Link to={`/project/${project.slug.current}`}>{project.title}</Link>
+                        <Link style={{ textDecoration: 'underline' }} to={`/project/${project.slug.current}`}>{project.title}</Link>
                       ) : (
                         <span>{project.title}</span>
                       )}
