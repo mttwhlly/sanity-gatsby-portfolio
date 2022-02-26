@@ -4,6 +4,7 @@ import Icon from "./icon";
 import { cn } from "../lib/helpers";
 
 import * as styles from "./header.module.css";
+import { GithubLogo, DribbbleLogo } from "phosphor-react";
 
 const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
   <div className={styles.root}>
@@ -19,7 +20,19 @@ const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
       <nav className={cn(styles.nav, showNav && styles.showNav)}>
         <ul>
           <li>
-            <Link to="//000679544.codepen.website/resume.pdf" target="_blank">Resumé</Link>
+            <Link to="//000679544.codepen.website/resume.pdf" target="_blank">
+              Resumé
+            </Link>
+          </li>
+          <li>
+            <Link to="//000679544.codepen.website/resume.pdf" target="_blank">
+              <GithubLogo weight="duotone" /> Github
+            </Link>
+          </li>
+          <li>
+            <Link to="//000679544.codepen.website/resume.pdf" target="_blank">
+              <DribbbleLogo weight="duotone" /> Dribbble
+            </Link>
           </li>
         </ul>
       </nav>
