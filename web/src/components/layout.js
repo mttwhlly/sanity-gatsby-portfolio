@@ -4,6 +4,7 @@ import Header from "./header";
 import "../styles/layout.css";
 import * as styles from "./layout.module.css";
 import { Link } from "gatsby";
+import { GitCommit } from "phosphor-react";
 
 const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
   <>
@@ -13,8 +14,8 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
       <div className={styles.footerWrapper}>
         <div className={styles.siteInfo}>
          
-          © {new Date().getFullYear()} Matt Whalley &nbsp;-&nbsp; <code><Link href="https://github.com/mttwhlly/sanity-gatsby-portfolio" target="_blank">
-            view source
+          © {new Date().getFullYear()} Matt Whalley &nbsp;-&nbsp; <code><Link to="//github.com/mttwhlly/sanity-gatsby-portfolio" target="_blank">
+            view source <GitCommit style={{verticalAlign:"sub"}}/>
           </Link></code>
         </div>
       </div>

@@ -1,16 +1,17 @@
 import { Link } from "gatsby";
 import React from "react";
+import Logo from "./logo";
 import Icon from "./icon";
 import { cn } from "../lib/helpers";
 
 import * as styles from "./header.module.css";
-import { GithubLogo, DribbbleLogo } from "phosphor-react";
+import { GithubLogo, DribbbleLogo, LinkedinLogo, Scroll } from "phosphor-react";
 
 const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
   <div className={styles.root}>
     <div className={styles.wrapper}>
       <div className={styles.branding}>
-        <Link to="/">{siteTitle}</Link>
+        <Link to="/"><Logo /> {siteTitle}</Link>
       </div>
 
       <button className={styles.toggleNavButton} onClick={showNav ? onHideNav : onShowNav}>
@@ -21,17 +22,22 @@ const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
         <ul>
           <li>
             <Link to="//000679544.codepen.website/resume.pdf" target="_blank">
-              Resumé
+            Resumé
             </Link>
           </li>
           <li>
-            <Link to="//000679544.codepen.website/resume.pdf" target="_blank">
-              <GithubLogo weight="duotone" /> Github
+            <Link to="//linkedin.com/in/mttwhlly" target="_blank">
+              <LinkedinLogo size="20" weight="duotone" style={{verticalAlign:"sub"}}/>
             </Link>
           </li>
           <li>
-            <Link to="//000679544.codepen.website/resume.pdf" target="_blank">
-              <DribbbleLogo weight="duotone" /> Dribbble
+            <Link to="//github.com/mttwhlly" target="_blank">
+              <GithubLogo size="20" weight="duotone" style={{verticalAlign:"sub"}}/>
+            </Link>
+          </li>
+          <li>
+            <Link to="//dribbble.com/mttwhlly" target="_blank">
+              <DribbbleLogo size="20" weight="duotone" style={{verticalAlign:"sub"}}/>
             </Link>
           </li>
         </ul>

@@ -86,7 +86,7 @@
 
   @nest & a {
     display: inline-block;
-    color: inherit;
+    color: var(--color-accent);
     text-decoration: none;
     padding: 0.25rem 0;
   }

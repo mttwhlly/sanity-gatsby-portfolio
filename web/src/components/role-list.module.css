@@ -33,7 +33,7 @@
   position: relative;
   width: 3em;
   height: 3em;
-  background: #eee;
+  background: var(--color-accent);
   border-radius: 50%;
   overflow: hidden;
 

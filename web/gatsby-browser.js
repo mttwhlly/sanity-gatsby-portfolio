@@ -5,5 +5,3 @@
  */
 
 // You can delete this file if you're not using it
-
-import "@fontsource/inter" // Defaults to weight 400 with all styles included.

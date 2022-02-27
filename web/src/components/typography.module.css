@@ -1,5 +1,14 @@
 @import '../styles/custom-media.css';
 
+@font-face {
+  font-family: "Native";
+  src: url("/static/Native-regular.woff2") format("woff2"),
+    url("/static/Native-regular.woff") format("woff"),
+    url("/static/Native-regular.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+
 :root {
   --base-unit: 17;
 
@@ -60,6 +69,13 @@
   font-size: var(--font-micro-size);
   line-height: var(--font-micro-line-height);
   text-transform: uppercase;
+}
+
+code {
+  font-family: 'Native', monospace;
+  padding: 0px 8px 2px;
+  border-radius: 4px;
+  background: rgba(0,0,0,0.05);
 }
 
 
@@ -155,3 +171,4 @@
     line-height: var(--font-large-line-height);
   }
 }
+
