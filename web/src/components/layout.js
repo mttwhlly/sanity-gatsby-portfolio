@@ -15,7 +15,7 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
         <div className={styles.siteInfo}>
          
           © {new Date().getFullYear()} Matt Whalley &nbsp;-&nbsp; <code><Link to="//github.com/mttwhlly/sanity-gatsby-portfolio" target="_blank">
-            view source <GitCommit style={{verticalAlign:"sub"}}/>
+            view source on Github <GitCommit style={{verticalAlign:"sub"}}/>
           </Link></code>
         </div>
       </div>
