@@ -86,7 +86,7 @@ const IndexPage = props => {
   return (
     <Layout>
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
-      <Container><h1 style={{lineHeight: "1.4"}}>Experienced frontend web developer <span style={{color:"#7f8081"}}>skilled at solving problems, optimizing workflows and building systems</span></h1></Container>
+      <Container><h1 style={{lineHeight: "1.4"}}>User-focused Designer and Developer</h1></Container>
       <Container>
         {projectNodes && (
           <ProjectPreviewGrid
